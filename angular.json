@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "contact-management"
+    }
+  },
+  "defaultProject": "contact-management",
+  "cli": {
+    "analytics": "dba14ea8-1505-4334-acd3-673cb915b208"
+  }
 }

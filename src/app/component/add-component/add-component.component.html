@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="image">
+                <img src="../../../assets/images/contact.jpeg" alt="">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <h5>Add Contact</h5>
+                <div class="row">
+                    <form [formGroup]="contactform">
+                        <div class="form-group mb-3">
+                          <label  class="form-label">First Name</label>
+                          <input type="text" class="form-control" formControlName="firstname" >
+                        </div>
+
+
+                        <div class="form-group mb-3">
+                            <label  class="form-label">Last Name</label>
+                            <input type="text" class="form-control" formControlName="lastname"  >
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label  class="form-label">Phone Number</label>
+                            <input type="number" class="form-control"  formControlName="mobilenumber" >
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label  class="form-label">City</label>
+                            <input type="text" class="form-control" formControlName="city" >
+                          </div>
+
+                      
+                    
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary m-2 " (click)="submitContactForm(this.contactform.value)"  [disabled]="this.contactform.invalid" >Submit</button>
+<button type="submit" class="btn btn-success m-2" routerLink="'/contactList'">Back</button>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
